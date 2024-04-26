@@ -10,7 +10,7 @@ inputs:
     description: Set Skaffold version
     required: false
   kubectl-version:
-    default: 1.26.2
+    default: 1.29.2
     description: Set Kubectl version
     required: false
   container-structure-test-version:
@@ -101,5 +101,5 @@ outputs:
   output:
     description: Built image tags
 runs:
-  using: node16
+  using: node18
   main: src/index.js
