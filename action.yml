@@ -101,5 +101,5 @@ outputs:
   output:
     description: Built image tags
 runs:
-  using: node18
+  using: node20
   main: src/index.js
