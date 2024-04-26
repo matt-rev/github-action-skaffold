@@ -4398,12 +4398,12 @@ function downloadAndCheckBinaries() {
                 case 1:
                     _a.sent();
                     return [4, (0, index_1.download)(containerStructureTestUrl, (0, path_1.join)(binDir, Binaries.CONTAINER_STRUCTURE_TEST)).then(function () {
-                            return (0, exec_1.exec)(Binaries.CONTAINER_STRUCTURE_TEST, ['version']);
+                            return (0, exec_1.exec)(Binaries.CONTAINER_STRUCTURE_TEST, ['version', '--output=json']);
                         })];
                 case 2:
                     _a.sent();
                     return [4, (0, index_1.download)(kubectlUrl, (0, path_1.join)(binDir, Binaries.KUBECTL)).then(function () {
-                            return (0, exec_1.exec)(Binaries.KUBECTL, ['version', '--client=true']);
+                            return (0, exec_1.exec)(Binaries.KUBECTL, ['version', '--client=true', '--output=json']);
                         })];
                 case 3:
                     _a.sent();
